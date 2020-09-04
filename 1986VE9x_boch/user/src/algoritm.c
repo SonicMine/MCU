@@ -1,4 +1,4 @@
-﻿#include "algoritm.h"
+#include "algoritm.h"
 #include "function.h"
 
 uint8_t restart_dff = 0;    // Признак сброса значения ДЗЧ
