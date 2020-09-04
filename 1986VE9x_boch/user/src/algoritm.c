@@ -64,7 +64,8 @@ void Tune_Freq(void){
                     Алгоритм подстройки фазы 
 *******************************************************************/
 void Tune_Phase(void){
-    if(fabs(ivi_dt) > 200) Write_In_CPLD(ADR_RESET_FSV, 0x00);
+    if(fabs(ivi_dt) > 200) 
+		Write_In_CPLD(ADR_RESET_FSV, 0x00);
     if(fabs(ivi_dt) > 10){ // если расхождение больше 200 нс
         Shift.Value = (-1)*ivi_dt;
     }else{
