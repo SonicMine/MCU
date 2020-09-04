@@ -29,7 +29,7 @@ void Calc_DFF(void){
                     Алгоритм подстройки частоты 
 *******************************************************************/
 void Tune_Freq(void){
-    double correction_freq;
+    double correction_freq; 
     
     if(restart_dff){	
         restart_dff = 0;			 // если установлен флаг перезапуска алгоритма сбрасываем флаг перезапуска алгоритма
